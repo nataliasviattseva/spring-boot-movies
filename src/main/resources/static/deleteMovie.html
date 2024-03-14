@@ -4,7 +4,7 @@
 <script type="text/javascript">
 function send() {
 	var id=document.getElementById('id').value;
-	const url = 'http://localhost:8888/movies/'+id;
+	const url = 'http://192.168.240.153:8888/movies/'+id;
 	fetch(url,{ method: 'DELETE' })
 	.then(response=> {
 		document.getElementById("responsestatus").innerHTML = response.status;
