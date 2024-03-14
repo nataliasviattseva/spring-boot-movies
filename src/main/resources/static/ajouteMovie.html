@@ -15,7 +15,7 @@ const parametres = {
 	'Content-Type':'application/json'
 	}
 };
-const url = 'http://localhost:8888/movies';
+const url = 'http://192.168.240.153:8888/movies';
 fetch(url,parametres)
 	.then(response => {
 	document.getElementById("responsestatus").innerHTML = response.status;
